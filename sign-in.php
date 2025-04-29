@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Order Placement (Process)
+    </title>
+    <link rel="icon" type="image/jpg" href="Images/A9-STORE.jpg" />
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=" A9 STORE.com : Online Shopping Site In India For Ladies Footwear(All)" />
+    <meta name="keywords" content=" A9 STORE.com : Online Shopping Site In India For Ladies Footwear(Stilettoes , high-heels , heeled-boots , ankle-straps , t-straps)" />
+    <meta name="google" content="nositelinksearchbox" />
+    <meta name="google-site-verification" content="" />
+    <link rel="canonical" href="" />
+    <link rel="stylesheet" href="Css/style1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,600;1,700&display=swap" />	
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <script src="https://kit.fontawesome.com/8f45f87de7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- section-start -->
+    <section style="min-height: 100vh; width: 100%;">		
+	    <div class="sign-in-payment-div" style="background: linear-gradient(90deg, RGB(239, 192, 80) 0%, RGB(239, 192, 80) 60%, rgba(0, 0, 0, 0.5) 100%);">
+		    <div>
+			    <a href="HOME.php" id="A9-STORE-logo">
+			        <div>
+                        <svg height="40" width="80">
+                            <path d="M 10 30 l 12 -30" stroke="#DC143C" stroke-width="4" fill="none" />
+                            <path d="M 22 0 l 15 40" stroke="#DC143C" stroke-width="4" fill="none" />
+                            <path d="M 15 20 l 15 0" stroke="#DC143C" stroke-width="4" fill="none" />
+                            <g font-size="15" font-weight="bold" font-family="sans-serif" fill="#DC143C" stroke="none" text-anchor="middle">
+                                <text x="50" y="22">NINE</text>
+                                <text x="48" y="35">STORE</text>
+                            </g>
+                        </svg>				
+			    	</div>		
+			    </a>
+				<span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong style="color: #777;" id="delivery-blink">Sign In</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="text-shadow: 3px 3px 3px #444;">Payment</span></span>
+            </div>			
+        </div>		
+		<div class="sign-in-payment-div2" style="height: 90%;">
+		    <div style="text-shadow: 3px 3px 3px #444;"><br>Delivery Address</div>
+		    <div style="text-align: right; padding: 0px 10px; text-shadow: 3px 3px 3px #444;"><br><br><br>Place Order</div>
+		</div>
+        <svg id="delivery-blink" height="90" width="87" style="position: absolute; left: 9%; top: 3%;">
+            <g fill="none" stroke="grey" stroke-width="4">
+               <path stroke-dasharray="10,10" d="M25 80 l215 -170" />
+            </g>
+        </svg>
+        <svg height="80" width="200" style="position: absolute; left: 10.8%; top: 7.5%;">
+            <g fill="none" stroke="#dddddd" stroke-width="4">
+               <path stroke-dasharray="10,10" d="M0 50 l215 -60" />
+            </g>
+        </svg>	
+        <svg height="150" width="300" style="position: absolute; left: 8%; top: 7%;">
+            <g fill="none" stroke="#dddddd" stroke-width="4">
+               <path stroke-dasharray="10,10" d="M20 163 1200 -800" />
+            </g>
+        </svg>			
+		<!-- login-gui-start -->						
+        <div id="user-login" style="display: block; margin-top: 2%;">
+		    <h1 style="background: rgba(255, 165, 0); text-shadow: 2px 2px 2px #DC143C; border-radius: 5px;">Login</h1>
+			<div id="label-input-div-of-login">
+			    <form action="delivery-address-order-placement (process).php" method="POST">
+			        <label id="label1" style="text-shadow: 1px 1px 1px #ffff00;" for="email-number-input">Enter Email/Mobile Number</label>
+				    <input style="text-align: center;" id="email-number-input" type="text" name="email-number-input" autocomplete="off" />
+					<span id="field-validation-1" style="font-size: 11px; color: #ff0000; font-weight: bold; display: none;"><i class="fa fa-info-circle"></i> Required !</span>
+			        <fieldset id="login-password-fieldset">	
+				        <legend id="forget-legend">Forget?</legend>
+				        <label id="label2" style="text-shadow: 1px 1px 1px #ffff00;" for="password-input">Enter Password</label>
+				        <span><input style="width: 90%; text-align: center;" type="password" name="password-input" id="login-password"  autocomplete="off" /><i id="login-password-icon" style="cursor: pointer; padding: 4px 4px;" class="bi bi-eye-slash"></i></span>
+						<span id="field-validation-2" style="font-size: 11px; color: #ff0000; font-weight: bold; display: none;"><i class="fa fa-info-circle"></i> Required !</span>
+				    </fieldset>
+					<span id="field-validation-8" style="font-size: 11px; color: #ff0000; font-weight: bold; display: none;"><i class="fa fa-info-circle"></i> New and Reprise ain't same !</span>						
+			        <label id="label5" style="text-shadow: 1px 1px 1px #ffff00; display: none" for="passwordreset">New Password</label>						
+				    <input style="text-align: center; display: none" id="passwordreset" type="text" name="passwordreset" autocomplete="off" />	
+					<span id="field-validation-6" style="font-size: 11px; color: #ff0000; font-weight: bold; display: none;"><i class="fa fa-info-circle"></i> Required !</span>												
+			        <label id="label6" style="text-shadow: 1px 1px 1px #ffff00; display: none" for="passwordreprise">Password Reprise</label>						
+				    <input style="text-align: center; display: none" id="passwordreprise" type="text" name="passwordreprise" autocomplete="off" />	
+					<span id="field-validation-7" style="font-size: 11px; color: #ff0000; font-weight: bold; display: none;"><i class="fa fa-info-circle"></i> Required !</span>												
+			        <label id="label3" style="text-shadow: 1px 1px 1px #ffff00; display: none" for="otp">Enter OTP <i id="whyopener" style="cursor: pointer; font-size: 12px; text-shadow: 1px 1px 1px RGB(239, 192, 80);" class="fa fa-info-circle"></i></label>						
+				    <input style="text-align: center; display: none;" id="otp" type="text" name="otp" autocomplete="off" />
+					<span id="field-validation-5" style="font-size: 11px; color: #ff0000; font-weight: bold; display: none;"><i class="fa fa-info-circle"></i> Required !</span>	
+                    <div style="margin-top: 5px; box-shadow: 0px 1px 3px 2px #DC134C; display: none; font-size: 11px; color: #DC134C; text-shadow: 1px 1px 1px #ffd700; border-radius: 5px; border: 2px solid RGB(239, 192, 80);" id="why">
+					    <strong>You will have got a message or an email on which your OTP<br>(one time password) would be written.<br>Why : This is for the user's security so that no other can manipulate with your account.</strong>
+					</div>						
+					<p style="font-size: 11px; text-align: left; text-shadow: 0.5px 0.5px 0.5px #ffff00; margin-top: 5px;"><i class="fa fa-info-circle"></i> By logging-in, you are agreeing to A9 STORE's <a href="Terms-of-use.php">Terms Of Use</a> and <a href="Privacy-policy">Privacy Policy</a> .</p>
+				    <button type="submit" id="login-button" style="margin-top: 5px; width: 98%;">Login</button>
+				    <button type="submit" id="login-button2" style="margin-top: 5px; width: 98%; display: none">Login</button>
+				    <button type="submit" id="login-button3" style="margin-top: 5px; width: 98%; display: none">Save & Login</button>
+					<fieldset id="or">
+					    <legend style="text-shadow: 1px 1px 1px #ffff00;">or</legend>
+						<button id="OTP-request">Request For OTP</button>
+					</fieldset>
+				</form>
+            </div>	
+			<button id="create-an-account-button">New To A9 STORE ? Create An Account</button>	
+		    <a href="HOME.php" id="A9-STORE-logo" style="bottom: -2.5%; right: -3%; position: absolute;">
+			    <div>
+                    <svg height="40" width="80">
+                        <path d="M 10 30 l 12 -30" stroke="#DC143C" stroke-width="4" fill="none" />
+                        <path d="M 22 0 l 15 40" stroke="#DC143C" stroke-width="4" fill="none" />
+                        <path d="M 15 20 l 15 0" stroke="#DC143C" stroke-width="4" fill="none" />
+                        <g font-size="15" font-weight="bold" font-family="sans-serif" fill="#DC143C" stroke="none" text-anchor="middle">
+                            <text x="50" y="22">NINE</text>
+                            <text x="48" y="35">STORE</text>
+                        </g>
+                    </svg>				
+				</div>		
+			</a>				
+        </div>						
+        <div id="create-an-account-div">
+			<h1 style="background: rgba(255, 165, 0); text-shadow: 2px 2px 2px #DC143C;">Signup</h1>
+			<div class="signup-details">
+			    <form>
+				    <label for="mobile-number-for-signup">Mobile Number</label>
+				    <input style="padding: 3px 3px 3px 45px; width: 88%;" id="mobile-number-input-of-signup" type="tel" name="mobile-number-for-signup" autocomplete="off" /><span id="plusnineone">+91 - </span>
+					<span id="field-validation-3" style="font-size: 11px; color: #ff0000; font-weight: bold; text-shadow: none; display: none;"><i class="fa fa-info-circle"></i> Required !</span>
+					<span id="field-validation-4" style="font-size: 11px; color: #ff0000; font-weight: bold; text-shadow: none; display: none;"><i class="fa fa-info-circle"></i> Not a valid mobile number !</span>
+					<p style="font-size: 11px; text-align: left; text-shadow: 0.5px 0.5px 0.5px #ffff00; margin-top: 5px;"><i class="fa fa-info-circle"></i> By proceeding, you are agreeing to A9 STORE's <a href="Terms-of-use.php">Terms Of Use</a> and <a href="Privacy-policy.php">Privacy Policy.</a></p>						
+					<button id="proceed-button" style="margin-top: 5px; padding: 2px 2px;">Proceed</button>
+				</form>
+			</div>
+			<button id="login-way-through-signup-div" style="margin-top: 10px;">Already our member ? Login</button>
+		    <a href="HOME.php" id="A9-STORE-logo" style="bottom: -2.5%; right: -3%; position: absolute;">
+			    <div>
+                    <svg height="40" width="80">
+                        <path d="M 10 30 l 12 -30" stroke="#DC143C" stroke-width="4" fill="none" />
+                        <path d="M 22 0 l 15 40" stroke="#DC143C" stroke-width="4" fill="none" />
+                        <path d="M 15 20 l 15 0" stroke="#DC143C" stroke-width="4" fill="none" />
+                        <g font-size="15" font-weight="bold" font-family="sans-serif" fill="#DC143C" stroke="none" text-anchor="middle">
+                            <text x="50" y="22">NINE</text>
+                            <text x="48" y="35">STORE</text>
+                        </g>
+                    </svg>				
+				</div>		
+			</a>				 				
+        </div>																											
+		<div class="event" id="event">
+		    <span id="event-close">&times;</span>
+		    <div class="event-image-div">
+			    <img src="images/event-image-1.jpg" />
+				<button id="book-tickets">Book Tickets</button>
+			</div>
+		</div>																										
+		<div id="releasing-date">
+		    <span id="releasing-date-close">&times;</span>
+			<div class="releasing-date-sub-div">
+			    <h2>Release Date</h2>
+				<a href="COMING SOON.php" style="text-decoration: none;"><button id="release-date-details-button">Details</button></a>
+			</div>
+		</div>
+		<!-- description(release-date)-end -->																															`					
+    </section>	
+    <!-- section-end -->
+    <div class="running-time" style="position: absolute; bottom: 0; background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, RGB(239, 192, 80) 50%, rgba(0, 0, 0, 0.5) 100%);">
+	    <h6>&#169; 2021-2022 , A9 STORE.com, Inc. | <a href="Terms-of-use.php">Terms Of Use</a> | <a href="Privacy-policy.php">Privacy Policy</a> | <a href="Return-policy.php">Return Policy</a></h6>
+	</div>	
+	
+	<!--JAVASCRIPT-->
+    <script type="text/javascript">	
+		$('#login-button').click(function(){
+		    var mobileorid = document.getElementById("email-number-input").value;
+		    var password = document.getElementById("login-password").value;
+		    if(mobileorid === ""){
+		        document.getElementById('field-validation-1').style.display = "block";
+				document.getElementById("email-number-input").style.border = "2px solid #DC143C";
+				document.getElementById("email-number-input").style.backgroundColor = "#FFF8DC";
+				document.getElementById("email-number-input").style.boxShadow = "0px 0px 5px 1px #DC134C";
+				return false;
+		    }else if(password === ""){
+                document.getElementById('field-validation-2').style.display = "block";
+				document.getElementById("login-password").style.border = "2px solid #DC143C";
+				document.getElementById("login-password").style.backgroundColor = "#FFF8DC";
+				document.getElementById("login-password").style.boxShadow = "0px 0px 5px 1px #DC134C";
+				return false;
+            }else{
+			    document.getElementById('field-validation-1').style.display = "none";
+                document.getElementById('field-validation-2').style.display = "none";
+				return true;  
+            }					
+        });		
+		$('#login-button2').click(function(){
+		    var forotp = document.getElementById("otp").value;
+		    if(forotp === ""){
+		        document.getElementById('field-validation-5').style.display = "block";
+				document.getElementById("otp").style.border = "2px solid #DC143C";
+				document.getElementById("otp").style.backgroundColor = "#FFF8DC";
+				document.getElementById("otp").style.boxShadow = "0px 0px 5px 1px #DC134C";
+				return false;
+            }else{
+			    document.getElementById('field-validation-1').style.display = "none";
+				return true;  
+            }					
+        });	
+		$('#login-button3').click(function(){
+		    document.getElementById("why").style.display = "none";
+		    var forotp3 = document.getElementById("otp").value;
+		    var reprisepassword = document.getElementById("passwordreprise").value;
+		    var resetpassword = document.getElementById("passwordreset").value;
+		    if(resetpassword === ""){
+		        document.getElementById('field-validation-6').style.display = "block";
+				document.getElementById("passwordreset").style.border = "2px solid #DC143C";
+				document.getElementById("passwordreset").style.backgroundColor = "#FFF8DC";
+				document.getElementById("passwordreset").style.boxShadow = "0px 0px 5px 1px #DC134C";
+				return false;
+            }else if(reprisepassword === ""){
+			    document.getElementById('field-validation-6').style.display = "none";
+                document.getElementById('field-validation-7').style.display = "block";
+				document.getElementById("passwordreprise").style.border = "2px solid #DC143C";
+				document.getElementById("passwordreprise").style.backgroundColor = "#FFF8DC";
+				document.getElementById("passwordreprise").style.boxShadow = "0px 0px 5px 1px #DC134C";
+				return false;
+            }else if(forotp3 === ""){
+                document.getElementById('field-validation-7').style.display = "none";					
+                document.getElementById('field-validation-5').style.display = "block";
+				document.getElementById("otp").style.border = "2px solid #DC143C";
+				document.getElementById("otp").style.backgroundColor = "#FFF8DC";
+				document.getElementById("otp").style.boxShadow = "0px 0px 5px 1px #DC134C";
+				return false;
+			}else if(resetpassword !== reprisepassword){
+                document.getElementById('field-validation-5').style.display = "none";					
+                document.getElementById('field-validation-8').style.display = "block";
+				document.getElementById("passwordreprise").style.border = "2px solid #DC143C";
+				document.getElementById("passwordreprise").style.backgroundColor = "#FFF8DC";
+				document.getElementById("passwordreprise").style.boxShadow = "0px 0px 5px 1px #DC134C";					
+				document.getElementById("passwordreset").style.border = "2px solid #DC143C";
+				document.getElementById("passwordreset").style.backgroundColor = "#FFF8DC";
+				document.getElementById("passwordreset").style.boxShadow = "0px 0px 5px 1px #DC134C";		
+                return false;						
+			}else{
+			    document.getElementById('field-validation-5').style.display = "none";
+			    document.getElementById('field-validation-6').style.display = "none";
+			    document.getElementById('field-validation-7').style.display = "none";
+			    document.getElementById('field-validation-8').style.display = "none";
+				return true;  
+            }					
+        });					
+		$('#forget-legend').click(function(){
+		    var mobileoridforforgetpassword = document.getElementById("email-number-input").value;
+		    if(mobileoridforforgetpassword === ""){
+		        document.getElementById('field-validation-1').style.display = "block";
+				document.getElementById("email-number-input").style.border = "2px solid #DC143C";
+				document.getElementById("email-number-input").style.backgroundColor = "#FFF8DC";
+				document.getElementById("email-number-input").style.boxShadow = "0px 0px 5px 1px #DC134C";													
+				return false;
+			}else{
+			    document.getElementById('field-validation-1').style.display = "none";
+			    document.getElementById('otp').style.display = "block";
+			    document.getElementById('or').style.display = "none";
+				document.getElementById("login-password-fieldset").style.display = "none";							
+				document.getElementById("label3").style.display = "block";						
+				document.getElementById("label1").style.display = "none";						
+				document.getElementById("label5").style.display = "block";						
+				document.getElementById("label6").style.display = "block";						
+				document.getElementById("passwordreset").style.display = "block";						
+				document.getElementById("passwordreprise").style.display = "block";						
+				document.getElementById("email-number-input").style.display = "none";												
+				document.getElementById("login-button").style.display = "none";												
+				document.getElementById("login-button3").style.display = "block";												
+			    return true;
+			}
+		});	
+		$('#OTP-request').click(function(){
+		    var mobileoridforforgetpassword = document.getElementById("email-number-input").value;
+		    if(mobileoridforforgetpassword === ""){
+		        document.getElementById('field-validation-1').style.display = "block";
+				document.getElementById("email-number-input").style.border = "2px solid #DC143C";
+				document.getElementById("email-number-input").style.backgroundColor = "#FFF8DC";
+				document.getElementById("email-number-input").style.boxShadow = "0px 0px 5px 1px #DC134C";							
+				return false;
+			}else{
+			    document.getElementById('field-validation-1').style.display = "none";
+				document.getElementById("login-password-fieldset").style.display = "none";							
+				document.getElementById("label3").style.display = "block";							
+				document.getElementById("otp").style.display = "block";	
+				document.getElementById("otp").style.border = "2px solid #DC143C";
+				document.getElementById("otp").style.backgroundColor = "#FFF8DC";
+				document.getElementById("otp").style.boxShadow = "0px 0px 5px 1px #DC134C";	
+				document.getElementById("email-number-input").style.border = "none";
+				document.getElementById("email-number-input").style.backgroundColor = "none";
+				document.getElementById("email-number-input").style.boxShadow = "none";							
+				document.getElementById("or").style.display = "none";							
+				document.getElementById("login-button").style.display = "none";							
+				document.getElementById("login-button2").style.display = "block";							
+			    return false;
+			}
+		});			
+		$('#proceed-button').click(function(){
+		    var numberforotp = document.getElementById("mobile-number-input-of-signup").value;
+		    if(numberforotp === ""){
+		        document.getElementById('field-validation-3').style.display = "block";
+				document.getElementById("mobile-number-input-of-signup").style.border = "2px solid #DC143C";
+				document.getElementById("mobile-number-input-of-signup").style.backgroundColor = "#FFF8DC";
+				document.getElementById("mobile-number-input-of-signup").style.boxShadow = "0px 0px 5px 1px #DC134C";					
+				return false;
+			}else if(!numberforotp.match(/^\d{10}$/)){
+		        document.getElementById('field-validation-4').style.display = "block";
+		        document.getElementById('field-validation-3').style.display = "none";						
+				document.getElementById("mobile-number-input-of-signup").style.border = "2px solid #DC143C";
+				document.getElementById("mobile-number-input-of-signup").style.backgroundColor = "#FFF8DC";
+				document.getElementById("mobile-number-input-of-signup").style.boxShadow = "0px 0px 5px 1px #DC134C";					
+				return false;					    					
+			}else if(numberforotp.length !== 10){
+		        document.getElementById('field-validation-4').style.display = "block";
+		        document.getElementById('field-validation-3').style.display = "none";
+				document.getElementById("mobile-number-input-of-signup").style.border = "2px solid #DC143C";
+				document.getElementById("mobile-number-input-of-signup").style.backgroundColor = "#FFF8DC";
+				document.getElementById("mobile-number-input-of-signup").style.boxShadow = "0px 0px 5px 1px #DC134C";	
+                return false;						
+			}else{
+			    document.getElementById('field-validation-3').style.display = "none";
+		        document.getElementById('field-validation-4').style.display = "none";						
+			    return true;
+			}
+		});					
+        $('#login-button').mouseover(function(){
+		    var loginbuttonnumberorid = document.getElementById("email-number-input").value;
+		    var loginbuttonpassword = document.getElementById("login-password").value;
+			if(loginbuttonnumberorid === '' || loginbuttonpassword === ''){
+                document.getElementById('login-button').style.cursor = "not-allowed";
+            }else{
+                document.getElementById('login-button').style.cursor = "pointer";
+            }
+			if(loginbuttonnumberorid === ''){
+                document.getElementById('OTP-request').style.cursor = "not-allowed";
+            }else{
+                document.getElementById('OTP-request').style.cursor = "pointer";
+            }					
+		});	
+        $('#login-button2').mouseover(function(){
+		    var otpinput = document.getElementById("otp").value;
+			if(otpinput === ''){
+                document.getElementById('login-button2').style.cursor = "not-allowed";
+            }else{
+                document.getElementById('login-button2').style.cursor = "pointer";
+            }					
+		});		
+        $('#login-button3').mouseover(function(){
+		    var otpinput = document.getElementById("otp").value;
+		    var passwordresetinput = document.getElementById("passwordreset").value;
+		    var passwordrepriseinput = document.getElementById("passwordreprise").value;
+			if(otpinput === '' || passwordrepriseinput === '' || passwordresetinput === ''){
+                document.getElementById('login-button3').style.cursor = "not-allowed";
+            }else{
+                document.getElementById('login-button3').style.cursor = "pointer";
+            }					
+		});					
+        $('#proceed-button').mouseover(function(){
+		    var mobilebutton = document.getElementById("mobile-number-input-of-signup").value;	
+			if(mobilebutton === ''){
+                document.getElementById('proceed-button').style.cursor = "not-allowed";
+            }else{
+                document.getElementById('proceed-button').style.cursor = "pointer";
+            }	
+        });				
+
+		var open = document.getElementById("create-an-account-button");
+		open.addEventListener('click',function(){
+		    document.getElementById("create-an-account-div").style.display = "block";
+			document.getElementById("user-login").style.display = "none";
+		});					
+		var open = document.getElementById("login-way-through-signup-div");
+		open.addEventListener('click',function(){
+		    document.getElementById("user-login").style.display = "block";
+			document.getElementById("create-an-account-div").style.display = "none";
+		});	
+
+		    const inputforotp = document.getElementById("mobile-number-input-of-signup");
+		    inputforotp.addEventListener("focus", function(){
+			    document.getElementById("plusnineone").style.display = "block";
+			    document.getElementById("plusnineone").style.fontSize = "15px";
+			    document.getElementById("plusnineone").style.textShadow = "3px 3px 3px #ffd700";						
+			});
+		    inputforotp.addEventListener("focusout", function(){
+			    document.getElementById("plusnineone").style.fontSize = "14px";
+			    document.getElementById("plusnineone").style.textShadow = "none";
+			});	
+		const loginpasswordicon = document.querySelector('#login-password-icon');
+		const loginpassword = document.querySelector('#login-password');
+		
+		loginpasswordicon.addEventListener('click', function(e){
+		    const type = loginpassword.getAttribute('type') === 'password'? 'text' : 'password';
+			loginpassword.setAttribute('type', type);
+			this.classList.toggle('bi-eye');
+		});			
+        $('#whyopener').click(function(){
+		    document.getElementById("why").style.display = "block";
+		});	
+	</script>
+</body>
+</html>
